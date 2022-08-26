@@ -1,0 +1,748 @@
+2022-08-12 07:10:28 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: scrapybot)
+2022-08-12 07:10:29 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 36.0.0, Platform macOS-10.16-x86_64-i386-64bit
+2022-08-12 07:10:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-08-12 07:10:29 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS_PER_DOMAIN': '4',
+ 'LOG_FILE': 'headers.log',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'USER_AGENT': 'advertools/0.13.1'}
+2022-08-12 07:10:29 [scrapy.extensions.telnet] INFO: Telnet Password: 8c5c27c17a646cbd
+2022-08-12 07:10:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2022-08-12 07:10:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-08-12 07:10:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-08-12 07:10:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-08-12 07:10:29 [scrapy.core.engine] INFO: Spider opened
+2022-08-12 07:10:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-08-12 07:10:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-08-12 07:10:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://numfocus.org/robots.txt> (referer: None)
+2022-08-12 07:10:31 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/pandas> (referer: None)
+2022-08-12 07:10:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/pandas>
+2022-08-12 07:10:31 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/jupyter> (referer: None)
+2022-08-12 07:10:31 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/numpy> (referer: None)
+2022-08-12 07:10:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/jupyter>
+2022-08-12 07:10:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/numpy>
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/scipy> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/matplotlib> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/scipy>
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/matplotlib>
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/pydata> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/zarr> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/pydata>
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/zarr>
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/disc> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/disc>
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/awards> (referer: None)
+2022-08-12 07:10:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/awards>
+2022-08-12 07:10:32 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/astropy> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/tag/sunpy> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/astropy>
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/tag/sunpy>
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/itk> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/itk>
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/scikit-learn> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/networkx> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/scikit-learn>
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/networkx>
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/mlpack> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/cantera> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/scikit-image> (referer: None)
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/mlpack>
+2022-08-12 07:10:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/cantera>
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/scikit-image>
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/mdanalysis> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/mdanalysis>
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/blosc> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/blosc>
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/sciml> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/sciml>
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/sgkit> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/gdal> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/lfortran> (referer: None)
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/sgkit>
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/gdal>
+2022-08-12 07:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/lfortran>
+2022-08-12 07:10:34 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/open-journals> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/open-journals>
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/ropensci> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/ropensci>
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/xarray> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/xarray>
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/conda-forge> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/bokeh> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/conda-forge>
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/bokeh>
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/astropy> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/yt> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/astropy>
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/yt>
+2022-08-12 07:10:35 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/sympy> (referer: None)
+2022-08-12 07:10:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/sympy>
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/quantecon> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/sunpy> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/shogun> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/quantecon>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/sunpy>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/shogun>
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/pytables> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/pymc> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/pytables>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/pymc>
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/stan> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/fenics-project> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/stan>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/fenics-project>
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/ipython> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/numpy> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/ipython>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/numpy>
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/julia> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/matplotlib> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/pandas> (referer: None)
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/julia>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/matplotlib>
+2022-08-12 07:10:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/pandas>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/project-jupyter> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/nteract> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/project-jupyter>
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/nteract>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/jump> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/nibabel> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/jump>
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/nibabel>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/mathjax> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/mathjax>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/zarr> (referer: None)
+2022-08-12 07:10:37 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <HEAD https://numfocus.org/rocket/projects>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/openmbee> (referer: None)
+2022-08-12 07:10:37 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <HEAD https://numfocus.org/rocket/julia>
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/zarr>
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/openmbee>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/openfhe> (referer: None)
+2022-08-12 07:10:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/openfhe>
+2022-08-12 07:10:37 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/arviz> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/scipy> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/arviz>
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/scipy>
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/econ-ark> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/scientific-python> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/econ-ark>
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/scientific-python>
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/dask> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/tardis> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/project/napari> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/dask>
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/tardis>
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/project/napari>
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/>
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs/john-hunter-technology-fellowship> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs/john-hunter-technology-fellowship>
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs/pydata> (referer: None)
+2022-08-12 07:10:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs/pydata>
+2022-08-12 07:10:38 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/community/mission/annual-reports/annual-report-2016> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/search-result> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/diversity-appendix> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/community/mission/annual-reports/annual-report-2016>
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/search-result>
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/diversity-appendix>
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/code-of-conduct/response-and-enforcement-events-meetups> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/code-of-conduct/response-and-enforcement-events-meetups>
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate>
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/pydata-sponsor-forms> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/visiting-fellows> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-julia> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/pydata-sponsor-forms>
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/visiting-fellows>
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-julia>
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-shogun> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-jupyter> (referer: None)
+2022-08-12 07:10:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-shogun>
+2022-08-12 07:10:39 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/sustainer> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-jupyter>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-pandas> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/sustainer>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-numpy> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-pandas>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-dask> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-blosc> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-numpy>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-bokeh> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-dask>
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-blosc>
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-bokeh>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-cantera> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-cantera>
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-conda-forge> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-econ-ark> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-fenics> (referer: None)
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-conda-forge>
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-econ-ark>
+2022-08-12 07:10:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-fenics>
+2022-08-12 07:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-ipython> (referer: None)
+2022-08-12 07:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-mathjax> (referer: None)
+2022-08-12 07:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-ipython>
+2022-08-12 07:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-scipy> (referer: None)
+2022-08-12 07:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-mathjax>
+2022-08-12 07:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-scipy>
+2022-08-12 07:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-jose> (referer: None)
+2022-08-12 07:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-jose>
+2022-08-12 07:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-open-journals> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-ropensci> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-quantecon> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-open-journals>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-ropensci>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-quantecon>
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-sunpy> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-sunpy>
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-yt> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-pytables> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-sympy> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-jump> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-yt>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-pytables>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-sympy>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-jump>
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-xarray> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-joss> (referer: None)
+2022-08-12 07:10:42 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <HEAD https://numfocus.org/rocket/independent-contractors>
+2022-08-12 07:10:42 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-nteract> (referer: None)
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-xarray>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-joss>
+2022-08-12 07:10:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-nteract>
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/case-studies/ethics-in-ai-ml> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/case-studies/ethics-in-ai-ml>
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-stan> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/case-studies/first-photograph-black-hole> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-stan>
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/supporter> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/case-studies/first-photograph-black-hole>
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/supporter>
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-matplotlib> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/history> (referer: None)
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-matplotlib>
+2022-08-12 07:10:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/history>
+2022-08-12 07:10:43 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-pygiving> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-pygiving>
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/case-studies/curing-disease-with-numfocus-tools> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-numfocus-eoy> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-mlpack> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/case-studies/curing-disease-with-numfocus-tools>
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-numfocus-eoy>
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-mlpack>
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs>
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-zarr> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-zarr>
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-mdanalysis> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-scikit-image> (referer: None)
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-mdanalysis>
+2022-08-12 07:10:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-scikit-image>
+2022-08-12 07:10:44 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-astropy> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-astropy>
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-itk> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-itk>
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donation-do> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/privacy-policy> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donation-do>
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/privacy-policy>
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-osc> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-scikit-learn> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-osc>
+2022-08-12 07:10:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-scikit-learn>
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-openmbee> (referer: None)
+2022-08-12 07:10:45 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-tardis> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-openmbee>
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-tardis>
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-arviz> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-sciml> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-arviz>
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-sciml>
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-eoy-2020> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/match-your-donation> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-eoy-2020>
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/match-your-donation>
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-lfortran> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog>
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-lfortran>
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-networkx> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/community/mission> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/code-of-conduct> (referer: None)
+2022-08-12 07:10:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-networkx>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/community/mission>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/code-of-conduct>
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donation-acceptance-policy> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/board-history> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donation-acceptance-policy>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/board-history>
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-gdal> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/trademark-guidelines> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/sponsored-projects> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-gdal>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/trademark-guidelines>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/sponsored-projects>
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/legal> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/community> (referer: None)
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/legal>
+2022-08-12 07:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/community>
+2022-08-12 07:10:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <HEAD https://numfocus.org/projects-overview> from <HEAD https://numfocus.org/information-fiscal-sponsorship>
+2022-08-12 07:10:48 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <HEAD https://numfocus.org/projects-overview> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/eoy2021> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-sgkit> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/eoy2021>
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-sgkit>
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/2021-supporter-summit> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/your-support> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/2021-supporter-summit>
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/your-support>
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/support> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/support>
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/pymc-bayesian-book-form> (referer: None)
+2022-08-12 07:10:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/pymc-bayesian-book-form>
+2022-08-12 07:10:48 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/projects-overview> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/scopatz-wedding> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/giving-2021> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/projects-overview>
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/scopatz-wedding>
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/giving-2021>
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/sponsors/become-a-sponsor> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-for-nibabel> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/sponsored-projects/affiliated-projects> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/sponsors/become-a-sponsor>
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-for-nibabel>
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/sponsored-projects/affiliated-projects>
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/community/mission/annual-reports> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/community/mission/annual-reports>
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/arviz-bayesian-book-form> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/arviz-bayesian-book-form>
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-napari> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs/diversity-inclusion> (referer: None)
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-napari>
+2022-08-12 07:10:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs/diversity-inclusion>
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-pymc> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs/small-development-grants> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/sponsors> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-pymc>
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs/small-development-grants>
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/sponsors>
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/donate-to-openfhe> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/case-studies> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/programs/google-summer-code> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/donate-to-openfhe>
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/case-studies>
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/programs/google-summer-code>
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/community/people> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/community/people>
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/2022-project-summit-openmbee> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/2022-project-summit-openmbee>
+2022-08-12 07:10:50 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/2022-project-summit> (referer: None)
+2022-08-12 07:10:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/2022-project-summit>
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/google-summer-of-code-gsoc/applications-are-open-for-google-summer-of-code-with-numfocus> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/corporate-sponsors/activestate-joins-numfocus-corporate-sponsor> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/google-summer-of-code-gsoc/applications-are-open-for-google-summer-of-code-with-numfocus>
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/corporate-sponsors/activestate-joins-numfocus-corporate-sponsor>
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/corporate-sponsors/geotab-joins-numfocus-corporate-sponsor> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/communicating-feedback-service-notes-disc-unconference> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/corporate-sponsors/geotab-joins-numfocus-corporate-sponsor>
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/communicating-feedback-service-notes-disc-unconference>
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-2017-highlights-reel-achieve> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/inclusive-approaches-to-recruitment-outreach-notes-from-the-disc-unconference> (referer: None)
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-2017-highlights-reel-achieve>
+2022-08-12 07:10:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/inclusive-approaches-to-recruitment-outreach-notes-from-the-disc-unconference>
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/double-impact-5000-matching-gift-challenge-support-numfocus> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/starting-di-conversations-work-notes-disc-unconference> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/double-impact-5000-matching-gift-challenge-support-numfocus>
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/hackseq17-canadas-genomics-hackathon-for-open-science> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/getting-started-open-source-notes-numfocus-disc-unconference> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/starting-di-conversations-work-notes-disc-unconference>
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/hackseq17-canadas-genomics-hackathon-for-open-science>
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/getting-started-open-source-notes-numfocus-disc-unconference>
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/quantopian-commits-to-fund-pandas-as-a-new-numfocus-corporate-partner> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/quantopian-commits-to-fund-pandas-as-a-new-numfocus-corporate-partner>
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/projects/scipy-1-0-16-years-in-the-making> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pymc3> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-nteract> (referer: None)
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/projects/scipy-1-0-16-years-in-the-making>
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pymc3>
+2022-08-12 07:10:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-nteract>
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-summit-2016> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-summit-2016>
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/projects-director-job-posting> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/google-summer-of-code-2016-review> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/remembering-kim> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/projects-director-job-posting>
+2022-08-12 07:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/google-summer-of-code-2016-review>
+2022-08-12 07:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/remembering-kim>
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-raises-176k-beats-2015-fundraising-goal> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-raises-176k-beats-2015-fundraising-goal>
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-end-of-year-fundraising-drive-5000-matching-gift-challenge> (referer: None)
+2022-08-12 07:10:53 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-end-of-year-fundraising-drive-final-hours> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-sponsored-project-julia-receives-600k-grant> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-end-of-year-fundraising-drive-5000-matching-gift-challenge>
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-end-of-year-fundraising-drive-final-hours>
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-sponsored-project-julia-receives-600k-grant>
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/pydata-2016-sponsorships-limited-time-discount-on-multi-conference-bundles> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/pydata-2016-sponsorships-limited-time-discount-on-multi-conference-bundles>
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/slides-from-the-pydata-nyc-2015-discussion-track> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/slides-from-the-pydata-nyc-2015-discussion-track>
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-sponsored-project-ropensci-receives-29m-award> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-numpy> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-sponsored-project-ropensci-receives-29m-award>
+2022-08-12 07:10:54 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pytables> (referer: None)
+2022-08-12 07:10:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-numpy>
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pytables>
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-2014-review> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-2014-review>
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/matplotlib-lead-developer-explains-why-he-cant-fix-the-docs-but-you-can>
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-supported-project-data-carpentry-receives-grant> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-supported-project-data-carpentry-receives-grant>
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-thanks-matt-turk-for-his-service-on-the-board-of-directors> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-thanks-matt-turk-for-his-service-on-the-board-of-directors>
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/cantera-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/carpentries-transition-from-fiscally-sponsored-project-to-community-alliance-member> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/cantera-joins-numfocus-sponsored-projects>
+2022-08-12 07:10:55 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-receives-grant-for-project-sustainability> (referer: None)
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/carpentries-transition-from-fiscally-sponsored-project-to-community-alliance-member>
+2022-08-12 07:10:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-receives-grant-for-project-sustainability>
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/corporate-sponsors/bloomberg-supports-jupyter-numfocus-platinum-sponsor> (referer: None)
+2022-08-12 07:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/corporate-sponsors/bloomberg-supports-jupyter-numfocus-platinum-sponsor>
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/optiver-joins-numfocus-corporate-sponsors> (referer: None)
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/disc-committee-seeks-nominations-for-2018-2020-members> (referer: None)
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/bokeh-joins-sponsored-projects> (referer: None)
+2022-08-12 07:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/optiver-joins-numfocus-corporate-sponsors>
+2022-08-12 07:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/disc-committee-seeks-nominations-for-2018-2020-members>
+2022-08-12 07:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/bokeh-joins-sponsored-projects>
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/with-a-little-help-from-our-friends-join-the-numfocus-friendraiser> (referer: None)
+2022-08-12 07:10:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/with-a-little-help-from-our-friends-join-the-numfocus-friendraiser>
+2022-08-12 07:10:56 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-welcomes-jim-weiss-events-coordinator> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/open-journals-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/spotlight-on-sustainability-at-the-2017-numfocus-summit> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-welcomes-jim-weiss-events-coordinator>
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/open-journals-joins-numfocus-sponsored-projects>
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/spotlight-on-sustainability-at-the-2017-numfocus-summit>
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/the-econ-ark-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/the-econ-ark-joins-numfocus-sponsored-projects>
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/how-to-compare-photos-of-the-solar-eclipse-using-python-sunpy> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/leveling-up-with-open-astronomy-astropy-affiliated-packages> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/2017-gsoc-students-complete-work-on-numfocus-projects> (referer: None)
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/how-to-compare-photos-of-the-solar-eclipse-using-python-sunpy>
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/leveling-up-with-open-astronomy-astropy-affiliated-packages>
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science>
+2022-08-12 07:10:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/2017-gsoc-students-complete-work-on-numfocus-projects>
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/belinda-weaver-joins-carpentries-as-community-development-lead> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-projects-at-scipy-2017> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/why-is-numpy-only-now-getting-funded> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/belinda-weaver-joins-carpentries-as-community-development-lead>
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-projects-at-scipy-2017>
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/why-is-numpy-only-now-getting-funded>
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/python-in-astronomy-2017> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/python-in-astronomy-2017>
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/what-is-it-like-to-chair-a-pydata-conference> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-projects-participate-in-docathon-2017> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-awards-small-development-grants-to-projects> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/what-is-it-like-to-chair-a-pydata-conference>
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-projects-participate-in-docathon-2017>
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-awards-small-development-grants-to-projects>
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/anyone-can-do-astronomy-with-python-and-open-data> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/moore-foundation-gives-grant-to-support-numfocus-diversity-inclusion-in-scientific-computing-initiatives> (referer: None)
+2022-08-12 07:10:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/anyone-can-do-astronomy-with-python-and-open-data>
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/moore-foundation-gives-grant-to-support-numfocus-diversity-inclusion-in-scientific-computing-initiatives>
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/ibm-brings-jupyter-and-spark-to-the-mainframe> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/pydata-atlanta-meetup-celebrates-1-year> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/ibm-brings-jupyter-and-spark-to-the-mainframe>
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/pydata-atlanta-meetup-celebrates-1-year>
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/facebook-makes-sophisticated-forecasting-techniques-available-to-non-experts-thanks-to-stan-a-numfocus-sponsored-project> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/applications-are-open-for-google-summer-of-code-2017> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/facebook-makes-sophisticated-forecasting-techniques-available-to-non-experts-thanks-to-stan-a-numfocus-sponsored-project>
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/applications-are-open-for-google-summer-of-code-2017>
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/welcome-back-gina-communications-director> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-end-of-year-drive-we-reached-our-goal> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/anacondacon-connecting-open-source-data-science-industry> (referer: None)
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/welcome-back-gina-communications-director>
+2022-08-12 07:10:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-end-of-year-drive-we-reached-our-goal>
+2022-08-12 07:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/free-software-and-open-standards-in-science-horizon-2020-call-for-action> (referer: None)
+2022-08-12 07:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/anacondacon-connecting-open-source-data-science-industry>
+2022-08-12 07:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/free-software-and-open-standards-in-science-horizon-2020-call-for-action>
+2022-08-12 07:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-end-of-year-fundraising-drive> (referer: None)
+2022-08-12 07:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-end-of-year-fundraising-drive>
+2022-08-12 07:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-gsoc-students-part-1-the-sympy-cohort> (referer: None)
+2022-08-12 07:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-gsoc-students-part-4-astropy-sunpy-shogun> (referer: None)
+2022-08-12 07:11:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-gsoc-students-part-1-the-sympy-cohort>
+2022-08-12 07:11:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-gsoc-students-part-4-astropy-sunpy-shogun>
+2022-08-12 07:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-gsoc-students-part-3-matplotlib-pymc3-fenics-mdanalysis-data-retriever-gensim> (referer: None)
+2022-08-12 07:11:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-gsoc-students-part-3-matplotlib-pymc3-fenics-mdanalysis-data-retriever-gensim>
+2022-08-12 07:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/jupyter-2017-acm-software-system-award> (referer: None)
+2022-08-12 07:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018> (referer: None)
+2022-08-12 07:11:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/jupyter-2017-acm-software-system-award>
+2022-08-12 07:11:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-awards-development-grants-to-open-source-projects-spring-2018>
+2022-08-12 07:11:01 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-gsoc-students-part-2-the-julia-cohort> (referer: None)
+2022-08-12 07:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/google-joins-numfocus-as-corporate-sponsor> (referer: None)
+2022-08-12 07:11:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-gsoc-students-part-2-the-julia-cohort>
+2022-08-12 07:11:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/google-joins-numfocus-as-corporate-sponsor>
+2022-08-12 07:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/applications-are-open-for-google-summer-of-code-2016-at-numfocus> (referer: None)
+2022-08-12 07:11:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/applications-are-open-for-google-summer-of-code-2016-at-numfocus>
+2022-08-12 07:11:02 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/diversity-and-metrics-in-software-communities-notes-from-the-disc-unconference> (referer: None)
+2022-08-12 07:11:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/diversity-and-metrics-in-software-communities-notes-from-the-disc-unconference>
+2022-08-12 07:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/ethical-algorithms-notes-from-the-disc-unconference> (referer: None)
+2022-08-12 07:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-the-numfocus-google-summer-of-code-2018-cohort> (referer: None)
+2022-08-12 07:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/ethical-algorithms-notes-from-the-disc-unconference>
+2022-08-12 07:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-the-numfocus-google-summer-of-code-2018-cohort>
+2022-08-12 07:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/google-summer-of-code-2018-cohort-2> (referer: None)
+2022-08-12 07:11:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/google-summer-of-code-2018-cohort-2>
+2022-08-12 07:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/two-sigma-renews-corporate-sponsorship-of-numfocus> (referer: None)
+2022-08-12 07:11:03 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-to-hold-2018-elections-for-board-of-directors> (referer: None)
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/two-sigma-renews-corporate-sponsorship-of-numfocus>
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-to-hold-2018-elections-for-board-of-directors>
+2022-08-12 07:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/google-summer-of-code-2018-part-4-final> (referer: None)
+2022-08-12 07:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/google-summer-of-code-2018-julia-cohort> (referer: None)
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/google-summer-of-code-2018-part-4-final>
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/google-summer-of-code-2018-julia-cohort>
+2022-08-12 07:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/updates-to-the-numfocus-code-of-conduct> (referer: None)
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/updates-to-the-numfocus-code-of-conduct>
+2022-08-12 07:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/what-happened-at-the-numfocus-summit-2018> (referer: None)
+2022-08-12 07:11:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/what-happened-at-the-numfocus-summit-2018>
+2022-08-12 07:11:04 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-announces-nvidia-as-gold-sponsor> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/giving-tuesday-thank-you> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-announces-nvidia-as-gold-sponsor>
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/giving-tuesday-thank-you>
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/sunpy-maps-digitizing-images-of-the-sun-from-the-1970s> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-announces-netflix-as-corporate-sponsor> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/sunpy-maps-digitizing-images-of-the-sun-from-the-1970s>
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/gina-helfrich-on-changelog-podcast> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-announces-netflix-as-corporate-sponsor>
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/gina-helfrich-on-changelog-podcast>
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/blosc-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/blosc-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:05 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/successful-sustainer-weeks-fundraiser-for-open-source-scientific-computing-software> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/julia-co-creators-to-receive-2019-james-h-wilkinson-prize-for-numerical-software> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/successful-sustainer-weeks-fundraiser-for-open-source-scientific-computing-software>
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/julia-co-creators-to-receive-2019-james-h-wilkinson-prize-for-numerical-software>
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/fall-2018-open-source-development-grants> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/fall-2018-open-source-development-grants>
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/xarray-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/xarray-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/2018-board-of-directors-selection-process-challenges> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/conda-forge-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/2018-board-of-directors-selection-process-challenges>
+2022-08-12 07:11:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/conda-forge-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:06 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/2018-numfocus-board-selection-results> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/2018-numfocus-board-selection-results>
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/summer-2018-open-source-development-grants> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/endorsements-in-the-2018-numfocus-election> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/summer-2018-open-source-development-grants>
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/announcing-julia-1-0> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/endorsements-in-the-2018-numfocus-election>
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-sustainer-weeks> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/announcing-julia-1-0>
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/2018-john-hunter-matplotlib-summer-fellows> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-sustainer-weeks>
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/2018-john-hunter-matplotlib-summer-fellows>
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/fenics-conference-2017-in-review> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/optimization-modeling-language-jump-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/fenics-conference-2017-in-review>
+2022-08-12 07:11:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/optimization-modeling-language-jump-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/directory-increase-diversity-inclusion-notes-disc-unconference> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/projects/numfocus-adds-shogun-machine-learning-toolbox-to-sponsored-projects> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/directory-increase-diversity-inclusion-notes-disc-unconference>
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/projects/numfocus-adds-shogun-machine-learning-toolbox-to-sponsored-projects>
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-welcomes-sunpy-our-newest-fiscally-sponsored-project> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-newest-fiscally-sponsored-project-the-fenics-project> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-welcomes-sunpy-our-newest-fiscally-sponsored-project>
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-newest-fiscally-sponsored-project-the-fenics-project>
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-yt> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-yt>
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-quantecon> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-stan> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-quantecon>
+2022-08-12 07:11:08 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-projects-featured-in-ligo-gravitational-waves-discovery> (referer: None)
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-stan>
+2022-08-12 07:11:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-projects-featured-in-ligo-gravitational-waves-discovery>
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/osdc-donates-5k-to-support-numpy-women-in-tech> (referer: None)
+2022-08-12 07:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/osdc-donates-5k-to-support-numpy-women-in-tech>
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-hires-new-staff-to-support-events-and-financial-services> (referer: None)
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-welcomes-sam-brice-as-inaugural-visiting-fellow> (referer: None)
+2022-08-12 07:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-hires-new-staff-to-support-events-and-financial-services>
+2022-08-12 07:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-welcomes-sam-brice-as-inaugural-visiting-fellow>
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/facebook-joins-numfocus-corporate-sponsors> (referer: None)
+2022-08-12 07:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/facebook-joins-numfocus-corporate-sponsors>
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-projects-at-scipy-2018> (referer: None)
+2022-08-12 07:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-projects-at-scipy-2018>
+2022-08-12 07:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-announces-cambridge-spark-will-host-a-pydata-conference-in-2019> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-announces-cambridge-spark-will-host-a-pydata-conference-in-2019>
+2022-08-12 07:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-releases-2018-annual-report> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-releases-2018-annual-report>
+2022-08-12 07:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-hires-executive-operations-administrator> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/discover-cookbook> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-hires-executive-operations-administrator>
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/discover-cookbook>
+2022-08-12 07:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-projects-to-apply-for-inaugural-google-season-of-docs> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/disc-committee-nominations-are-open-for-2019-2021-positions> (referer: None)
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-projects-to-apply-for-inaugural-google-season-of-docs>
+2022-08-12 07:11:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/disc-committee-nominations-are-open-for-2019-2021-positions>
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/ibm-renews-corporate-sponsorship-of-numfocus> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/two-sigma-renews-corporate-sponsorship-of-numfocus-2019> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/ibm-renews-corporate-sponsorship-of-numfocus>
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/two-sigma-renews-corporate-sponsorship-of-numfocus-2019>
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-hires-first-ever-development-director> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-hires-first-ever-development-director>
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/scipy-and-mathjax-join-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/scipy-and-mathjax-join-numfocus-sponsored-projects>
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/google-renews-numfocus-corporate-sponsorship> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/moderna-joins-numfocus-corporate-sponsors> (referer: None)
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/google-renews-numfocus-corporate-sponsorship>
+2022-08-12 07:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/moderna-joins-numfocus-corporate-sponsors>
+2022-08-12 07:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-2019-gsoc-students-part-3> (referer: None)
+2022-08-12 07:11:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-2019-gsoc-students-part-3>
+2022-08-12 07:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/dask-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-2019-gsoc-students-part-1> (referer: None)
+2022-08-12 07:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/meet-our-2019-gsoc-students-part-2> (referer: None)
+2022-08-12 07:11:12 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/quantumblack-joins-numfocus-corporate-sponsors> (referer: None)
+2022-08-12 07:11:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/dask-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-2019-gsoc-students-part-1>
+2022-08-12 07:11:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/meet-our-2019-gsoc-students-part-2>
+2022-08-12 07:11:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/quantumblack-joins-numfocus-corporate-sponsors>
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pandas> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/uncategorized/numfocus-announces-new-fiscally-sponsored-project-pandas>
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-and-tidelift-partner> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/worldwide-pandas-sprint> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/chan-zuckerberg-initiative-funds-numfocus-projects> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-and-tidelift-partner>
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/worldwide-pandas-sprint>
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/chan-zuckerberg-initiative-funds-numfocus-projects>
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/inaugural-numfocus-awards-and-new-contributor-recognition> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numpy-receives-first-ever-funding-thanks-to-moore-foundation> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-summit-2019> (referer: None)
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/inaugural-numfocus-awards-and-new-contributor-recognition>
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numpy-receives-first-ever-funding-thanks-to-moore-foundation>
+2022-08-12 07:11:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-summit-2019>
+2022-08-12 07:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/stepping-onto-a-new-path> (referer: None)
+2022-08-12 07:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/astropy-receives-900k-grant-from-moore-foundation> (referer: None)
+2022-08-12 07:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/2019-numfocus-awards> (referer: None)
+2022-08-12 07:11:14 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/mlpack-machine-learning-library-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/stepping-onto-a-new-path>
+2022-08-12 07:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/astropy-receives-900k-grant-from-moore-foundation>
+2022-08-12 07:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/2019-numfocus-awards>
+2022-08-12 07:11:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/mlpack-machine-learning-library-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-kicks-off-year-end-fundraising-with-2500-gift> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/sunpy-receives-nasa-grant-helps-generate-parker-solar-probe-results> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-kicks-off-year-end-fundraising-with-2500-gift>
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/double-your-donation-2018> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/sunpy-receives-nasa-grant-helps-generate-parker-solar-probe-results>
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/now-hiring-matplotlib-research-software-engineering-fellow>
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/double-your-donation-2018>
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/mdanalysis-joins-numfocus-sponsored-projects> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/mdanalysis-joins-numfocus-sponsored-projects>
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/statement-on-coronavirus> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/announcing-jupytercon-2020> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/pydata-covid-19-response> (referer: None)
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/statement-on-coronavirus>
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/announcing-jupytercon-2020>
+2022-08-12 07:11:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/pydata-covid-19-response>
+2022-08-12 07:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/introducing-our-newest-corporate-sponsorship-prospectus> (referer: None)
+2022-08-12 07:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-hires-andy-terrel-new-initiatives> (referer: None)
+2022-08-12 07:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/projects/yellowbrick-update-april-2020> (referer: None)
+2022-08-12 07:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/covid-19-blog> (referer: None)
+2022-08-12 07:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/introducing-our-newest-corporate-sponsorship-prospectus>
+2022-08-12 07:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-hires-andy-terrel-new-initiatives>
+2022-08-12 07:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/projects/yellowbrick-update-april-2020>
+2022-08-12 07:11:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/covid-19-blog>
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/pydata/2020-pydata-conferences-update-covid-19> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/moderna-imc-renew-numfocus-corporate-sponsorships> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/fundraising-and-support/numfocus-introduces-new-supporter-program> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/jobs/dask-life-sciences-fellow-open-job> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/pydata/2020-pydata-conferences-update-covid-19>
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/moderna-imc-renew-numfocus-corporate-sponsorships>
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/fundraising-and-support/numfocus-introduces-new-supporter-program>
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/jobs/dask-life-sciences-fellow-open-job>
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/jeremy-howard-apology> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/jeremy-howard-apology>
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/tech-driven-trading-firm-imc-joins-numfocus-corporate-sponsors> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/tech-driven-trading-firm-imc-joins-numfocus-corporate-sponsors>
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-earns-transparency-recognition-from-guidestar> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/open-source-developer-advocate> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/tardis-joins-numfocus-as-a-sponsored-project> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-earns-transparency-recognition-from-guidestar>
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/open-source-developer-advocate>
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/tardis-joins-numfocus-as-a-sponsored-project>
+2022-08-12 07:11:17 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/diversity-inclusion-disc/a-pivotal-time-in-numfocuss-project-aimed-dei-efforts> (referer: None)
+2022-08-12 07:11:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/diversity-inclusion-disc/a-pivotal-time-in-numfocuss-project-aimed-dei-efforts>
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/jupytercon2020-coc> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/jupytercon2020-coc>
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/fundraising-and-support/heising-simons-foundation-grant-2020> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/corporate-sponsors/anaconda-announces-multi-year-partnership-with-numfocus> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/fundraising-and-support/heising-simons-foundation-grant-2020>
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/corporate-sponsors/anaconda-announces-multi-year-partnership-with-numfocus>
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/blog/numfocus-hires-open-source-developer-advocate> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/jobs/job-posting-events-and-digital-marketing-coordinator> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/blog/numfocus-hires-open-source-developer-advocate>
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/jobs/job-posting-events-and-digital-marketing-coordinator>
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/jobs/job-posting-communications-and-marketing-manager> (referer: None)
+2022-08-12 07:11:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/jobs/job-posting-communications-and-marketing-manager>
+2022-08-12 07:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/jobs/scientific-software-developer-contract-basis-sunpy-project> (referer: None)
+2022-08-12 07:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/jobs/scientific-software-developer-contract-basis-sunpy-project>
+2022-08-12 07:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <HEAD https://numfocus.org/corporate-sponsors/numfocus-welcomes-tesco-technology-to-corporate-sponsors> (referer: None)
+2022-08-12 07:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://numfocus.org/corporate-sponsors/numfocus-welcomes-tesco-technology-to-corporate-sponsors>
+2022-08-12 07:11:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-08-12 07:11:19 [scrapy.extensions.feedexport] INFO: Stored jl feed (333 items) in: headers.jl
+2022-08-12 07:11:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 3,
+ 'downloader/request_bytes': 79302,
+ 'downloader/request_count': 335,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/HEAD': 334,
+ 'downloader/response_bytes': 208590,
+ 'downloader/response_count': 335,
+ 'downloader/response_status_count/200': 334,
+ 'downloader/response_status_count/302': 1,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 49.677899,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 8, 12, 4, 11, 19, 222231),
+ 'httpcompression/response_bytes': 110,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 333,
+ 'log_count/DEBUG': 672,
+ 'log_count/INFO': 11,
+ 'memusage/max': 118784000,
+ 'memusage/startup': 118784000,
+ 'response_received_count': 334,
+ 'robotstxt/forbidden': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 337,
+ 'scheduler/dequeued/memory': 337,
+ 'scheduler/enqueued': 337,
+ 'scheduler/enqueued/memory': 337,
+ 'start_time': datetime.datetime(2022, 8, 12, 4, 10, 29, 544332)}
+2022-08-12 07:11:19 [scrapy.core.engine] INFO: Spider closed (finished)
